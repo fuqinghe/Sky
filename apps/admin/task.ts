@@ -22,9 +22,7 @@ export class task extends plugin {
   async getAlmanac(e: Messgetype) {
     e.reply(
       segment.at(e.msg.author.id),
-      {
-        image: 'https://api.t1qq.com/api/sky/gy/sc/scsky.php'
-      }
+      {image: 'https://api.t1qq.com/api/sky/gy/sc/scsky.php'}
       )
     return false
   }
