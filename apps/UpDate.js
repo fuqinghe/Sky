@@ -33,7 +33,7 @@ export class xianyu_update extends plugin {
                 }
                 let numRet = /(\d*) files changed,/.exec(stdout);
                 if (numRet && numRet[1]) {
-                    e.reply(`此次更新了${numRet[1]}个内容,\n更新内容请前往Gitee查看~`);
+                    e.reply(`此次更新了${numRet[1]}个内容,\n更新内容请前往GitHub查看~`);
                     return true;
                 }
                 if (error) {
