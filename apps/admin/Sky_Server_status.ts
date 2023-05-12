@@ -5,7 +5,7 @@ export class Sky_Server_status extends plugin {
   [parameter: string]: PluginType
   constructor() {
     super({
-      dsc: '今日大蜡烛',
+      dsc: 'Sky服务器状态',
       rule: [
         {
           reg: '^/Sky状态$',
