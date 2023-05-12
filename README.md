@@ -1,4 +1,4 @@
-# ﻿<div align="center"><h1 align="center">Sky光遇插件<a href='https://gitee.com/Tloml-Starry/SKY-GuangYu-plugin/stargazers'><img src='https://gitee.com/Tloml-Starry/SKY-GuangYu-plugin/badge/star.svg?theme=dark' alt='star'></img></a></h1></div>
+# ﻿<div align="center"><h1 align="center">Sky光遇插件<a href='https://gitee.com/Tloml-Starry/Sky/stargazers'><img src='https://gitee.com/Tloml-Starry/Sky/badge/star.svg?theme=dark' alt='star'></img></a></h1></div>
 
 #### <div align="center">介绍</div>
 <div align="center">为Alemon-Bot提供光遇相关功能</div>
@@ -9,7 +9,11 @@
 ```
 git clone https://gitee.com/Tloml-Starry/Sky.git ./plugins/Sky/
 ```
+<div align="center">使用Gitee安装，在Alemon-Bot根目录执行</div>
 
+```
+git clone https://github.com/fuqinghe/Sky.git ./plugins/Sky/
+```
 #### <div align="center">更新</div>
 
 ```
