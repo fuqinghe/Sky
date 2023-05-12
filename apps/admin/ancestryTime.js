@@ -13,10 +13,10 @@ export class ancestryTime extends plugin {
           reg: '^/追光季多久未复刻$',
           fnc: 'season_Light_tracing'
         }, {
-          reg: '^/归属季多久未复刻$/',
+          reg: '^/归属季多久未复刻$',
           fnc: 'season_Belong_to'
         }, {
-          reg: '^/凌冬季多久未复刻$/',
+          reg: '^/凌冬季多久未复刻$',
           fnc: 'season_rhyme'
         }, {
           reg: '^/魔法季多久未复刻$',
