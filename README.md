@@ -17,20 +17,20 @@ git clone https://github.com/fuqinghe/Sky.git ./plugins/Sky/
 #### <div align="center">更新</div>
 
 ```
-# 使用指令：Sky更新
+# 使用指令：/Sky更新
 # 或者在Alemon-Bot根目录执行
 cd plugins/Sky && git pull
 ```
 <div align="center">绘画分享图库安装</div>
 
 ```
-# 使用指令：Sky更新图库
+# 使用指令：/Sky更新图库
 # 后续更新也是这个指令
 ```
 <div align="center">复刻图安装</div>
 
 ```
-# 使用指令：#刷新复刻或#更新复刻
+# 使用指令：/更新复刻
 # 后续更新也是这个指令
 ```
 
