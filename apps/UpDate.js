@@ -1,11 +1,11 @@
 import { exec } from 'child_process'
-import { plugin } from '../api'
+import { plugin } from 'alemon'
 import { AppName } from '../app.config'
 import fs from 'fs'
 const { exec } = require('child_process');
 const _path = process.cwd()
 
-export class xianyu_update extends plugin {
+export class Update extends plugin {
 	constructor() {
 		super({
 			dsc: 'Sky插件更新',
