@@ -4,12 +4,12 @@
 <div align="center">为Alemon-Bot提供光遇相关功能</div>
 
 #### <div align="center">安装</div>
-<div align="center">使用Gitee安装(推荐)，在Alemon-Bot根目录执行</div>
+<div align="center">使用Gitee安装，在Alemon-Bot根目录执行</div>
 
 ```
 git clone https://gitee.com/Tloml-Starry/Sky.git ./plugins/Sky/
 ```
-<div align="center">使用GitHub安装，在Alemon-Bot根目录执行</div>
+<div align="center">使用GiHub安装，在Alemon-Bot根目录执行</div>
 
 ```
 git clone https://github.com/fuqinghe/Sky.git ./plugins/Sky/
