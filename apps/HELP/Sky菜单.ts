@@ -7,7 +7,7 @@ export class Sky菜单 extends plugin {
       dsc: 'Sky菜单',
       rule: [
         {
-          reg: '^/?Sky菜单$',
+          reg: '^/?(Sky|sky|光遇)(菜单|帮助)$',
           fnc: 'Help'
         }
       ]

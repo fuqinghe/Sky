@@ -5,7 +5,7 @@ export class XX季多久未复刻 extends plugin {
     super({
       rule: [
         {
-          reg: '^/?XX季多久未复刻$',
+          reg: '^/?X多久未复刻$',
           fnc: 'season_XX'
         }
       ]
@@ -19,12 +19,12 @@ export class XX季多久未复刻 extends plugin {
    */
   async season_XX(e: Messagetype) {
     const XX = [
-        { name: '', date: new Date('') },
-        { name: '', date: new Date('') },
-        { name: '', date: new Date('') },
-        { name: '', date: new Date('') },
-        { name: '', date: new Date('') },
-        { name: '', date: new Date('') }
+        { name: '1', date: new Date('2023-01-01') },
+        { name: '2', date: new Date('2023-01-01') },
+        { name: '3', date: new Date('2023-01-01') },
+        { name: '4', date: new Date('2023-01-01') },
+        { name: '5', date: new Date('2023-01-01') },
+        { name: '6', date: new Date('2023-01-01') }
       ];
       let msg = 'XX季暂未复刻\n';
       const today = new Date();

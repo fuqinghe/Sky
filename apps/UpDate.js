@@ -39,11 +39,11 @@ export class Update extends plugin {
                 }
                 let numRet = /(\d*) files changed,/.exec(stdout);
                 if (numRet && numRet[1]) {
-                    e.reply(`此次更新了${numRet[1]}个内容,\n更新内容请前往Gitee查看~`);
+                    e.reply(`此次更新了${numRet[1]}个内容,\n请重启Bot生效更新`);
                     return true;
                 }
                 if (error) {
-                    e.reply('更新失败！\nError code: ' + error.code + '\n' + error.stack + '\n 请稍后重试。');
+                    e.reply('更新失败！');
                 }
             });
         }

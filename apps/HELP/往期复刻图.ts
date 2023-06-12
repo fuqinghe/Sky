@@ -7,7 +7,7 @@ export class 往期复刻图 extends plugin {
       dsc: '往期复刻图',
       rule: [
         {
-          reg: '^/?往期复刻图$',
+          reg: '^/?往期复刻$',
           fnc: 'Help_resident'
         }
       ]

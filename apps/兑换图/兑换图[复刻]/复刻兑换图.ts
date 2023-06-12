@@ -1,4 +1,4 @@
-import { plugin, Messagetype } from 'alemon'
+import { plugin, Messagetype, segment } from 'alemon'
 import fs from "fs"
 export class 复刻兑换图 extends plugin {
     constructor() {

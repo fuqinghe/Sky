@@ -1,5 +1,4 @@
-import { plugin, Messagetype } from 'alemon'
-import { createQrcode } from '../../../../src/alemon/qrcode'
+import { plugin, Messagetype, createQrcode } from 'alemon'
 
 export class 上传角色 extends plugin {
     constructor() {
