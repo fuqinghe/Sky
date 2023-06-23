@@ -17,7 +17,7 @@ export class 晨岛兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_CD(e: Messagetype) {
+  async Exchange_chart_CD(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/常驻/晨岛.png';
       e.sendImage(imgreply)
       return false;

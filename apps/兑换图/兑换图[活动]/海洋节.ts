@@ -17,7 +17,7 @@ export class 海洋兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_ocean(e: Messagetype) {
+  async Exchange_chart_ocean(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/活动/海洋.png';
       e.sendImage(imgreply)
       return false;

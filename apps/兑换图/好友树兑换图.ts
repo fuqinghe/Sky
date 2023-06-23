@@ -18,7 +18,7 @@ export class 好友树兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Friend_tree_redemption_chart(e: Messagetype) {
+  async Friend_tree_redemption_chart(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/好友树兑换图.png';
     e.sendImage(imgreply)
     return false

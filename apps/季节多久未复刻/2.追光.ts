@@ -18,7 +18,7 @@ export class 追光季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Light_tracing(e: Messagetype) {
+  async season_Light_tracing(e: Messagetype): Promise<boolean>  {
     const centent = '追光季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/02追光.png'
     const 追光 = [

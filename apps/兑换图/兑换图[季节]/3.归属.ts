@@ -17,7 +17,7 @@ export class 归属兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_Belong_to(e: Messagetype) {
+  async Exchange_chart_Belong_to(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/季节/归属.png';
       e.sendImage(imgreply)
       return false;

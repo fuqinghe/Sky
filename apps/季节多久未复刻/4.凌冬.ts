@@ -21,7 +21,7 @@ export class 凌冬季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_rhyme(e: Messagetype) {
+  async season_rhyme(e: Messagetype): Promise<boolean>  {
     const centent = '凌冬季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/04音韵季.png'
     const 音韵 = [

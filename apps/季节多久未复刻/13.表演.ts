@@ -18,7 +18,7 @@ export class 表演季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Performance(e: Messagetype) {
+  async season_Performance(e: Messagetype): Promise<boolean>  {
     const centent = '表演季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/13表演季.png'
     const 表演 = [

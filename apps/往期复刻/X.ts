@@ -19,7 +19,7 @@ export class X extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async X(e: Messagetype) {
+  async X(e: Messagetype): Promise<boolean>  {
     const msg = '20年复刻记录\n21年复刻记录\n22年复刻记录\n23年复刻记录';
     e.reply(msg)
     return false

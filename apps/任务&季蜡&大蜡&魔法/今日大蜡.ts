@@ -21,7 +21,7 @@ export class 大蜡位置 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Large_candle(e: Messagetype) {
+  async Large_candle(e: Messagetype): Promise<boolean>  {
     const url = 'https://api.t1qq.com/api/sky/gy/sc/dlz/scdlwz';
     const filePath = 'plugins/Sky/resource/每日/今日大蜡/scdlwz.jpg';
     axios({

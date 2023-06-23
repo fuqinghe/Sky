@@ -17,7 +17,7 @@ export class 禁阁兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_JG(e: Messagetype) {
+  async Exchange_chart_JG(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/常驻/禁阁.png';
       e.sendImage(imgreply)
       return false;

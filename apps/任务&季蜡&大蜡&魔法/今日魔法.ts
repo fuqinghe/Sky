@@ -21,7 +21,7 @@ export class 今日魔法 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async magic(e: Messagetype) {
+  async magic(e: Messagetype): Promise<boolean>  {
     const url = 'https://api.t1qq.com/api/sky/gy/sc/mf/magic';
     const filePath = 'plugins/Sky/resource/每日/今日魔法/magic.jpg';
     axios({

@@ -17,7 +17,7 @@ export class 夜行兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_Nocturnal_walking(e: Messagetype) {
+  async Exchange_chart_Nocturnal_walking(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/季节/夜行.png';
       e.sendImage(imgreply)
       return false;

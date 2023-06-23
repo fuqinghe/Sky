@@ -1,4 +1,4 @@
-import { plugin, Messagetype, segment } from 'alemon'
+import { plugin, Messagetype } from 'alemon'
 import axios from 'axios';
 import fs from 'fs'
 
@@ -15,7 +15,7 @@ export class 季蜡查询 extends plugin {
             ]
         });
     }
-    async 季蜡(e: Messagetype){
+    async 季蜡(e: Messagetype) {
         var json = JSON.parse(fs.readFileSync(dirpath + "/" + filename, "utf8"));
         var id = e.msg.author.id
         let place = e.msg.content.replace(/#|(<@![0-9a-zA-Z]+>| |季蜡查询)/g, "")

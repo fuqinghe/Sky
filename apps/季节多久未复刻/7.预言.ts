@@ -18,7 +18,7 @@ export class 预言季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_prophecy(e: Messagetype) {
+  async season_prophecy(e: Messagetype): Promise<boolean>  {
     const centent = '预言季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/07预言季.png'
     const 预言 = [

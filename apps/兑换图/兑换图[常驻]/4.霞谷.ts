@@ -17,7 +17,7 @@ export class 霞谷兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_XG(e: Messagetype) {
+  async Exchange_chart_XG(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/常驻/霞谷.png';
       e.sendImage(imgreply)
       return false;

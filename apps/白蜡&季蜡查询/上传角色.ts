@@ -11,7 +11,7 @@ export class 上传角色 extends plugin {
             ]
         });
     }
-    async sky_cxid(e: Messagetype){
+    async sky_cxid(e: Messagetype) {
         const img = await createQrcode('https://api.t1qq.com/api/sky/bd.html')
         if (img) e.postImage(img, '请扫码绑定Token获取光遇id')
     }

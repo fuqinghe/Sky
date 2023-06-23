@@ -18,7 +18,7 @@ export class 小王子季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Little_prince(e: Messagetype) {
+  async season_Little_prince(e: Messagetype): Promise<boolean>  {
     const 小王子 = [
       { name: '沾沾自喜的自恋狂', date: new Date('2023-01-02')},
       { name: '呼风唤雨的统治者', date: new Date},

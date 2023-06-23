@@ -18,7 +18,7 @@ export class 魔法季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_magic(e: Messagetype) {
+  async season_magic(e: Messagetype): Promise<boolean>  {
     const centent = '魔法季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/05魔法季.png'
     const 魔法 = [

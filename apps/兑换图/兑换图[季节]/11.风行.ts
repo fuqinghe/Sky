@@ -17,7 +17,7 @@ export class 风行兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_Popular(e: Messagetype) {
+  async Exchange_chart_Popular(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/季节/风行.png';
       e.sendImage(imgreply)
       return false;

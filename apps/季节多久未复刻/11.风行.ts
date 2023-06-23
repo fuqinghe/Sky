@@ -18,7 +18,7 @@ export class 风行季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Popular(e: Messagetype) {
+  async season_Popular(e: Messagetype): Promise<boolean>  {
     const centent = '风行季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/11风行季.png'
     const 风行 = [

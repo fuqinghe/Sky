@@ -18,7 +18,7 @@ export class 梦想季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_dream(e: Messagetype) {
+  async season_dream(e: Messagetype): Promise<boolean>  {
     const centent = '梦想季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/08梦想季.png'
     const 梦想 = [

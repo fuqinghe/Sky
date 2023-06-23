@@ -19,7 +19,7 @@ export class 复刻记录23 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async FK23(e: Messagetype) {
+  async FK23(e: Messagetype): Promise<boolean>  {
     const imgreply = 'plugins/Sky/resource/复刻记录/23.png';
     e.sendImage(imgreply)
     return false

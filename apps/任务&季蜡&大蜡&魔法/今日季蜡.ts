@@ -21,7 +21,7 @@ export class 季蜡位置 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Seasonal_wax(e: Messagetype) {
+  async Seasonal_wax(e: Messagetype): Promise<boolean>  {
     const url = 'https://api.t1qq.com/api/sky/gy/sc/json/scjl.jpg';
     const filePath = 'plugins/Sky/resource/每日/今日季蜡/scjl.jpg';
     axios({

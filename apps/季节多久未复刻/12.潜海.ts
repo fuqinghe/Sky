@@ -18,7 +18,7 @@ export class 潜海季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Submerget_sea(e: Messagetype) {
+  async season_Submerget_sea(e: Messagetype): Promise<boolean>  {
     const centent = '潜海季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/12潜海季.png'
     const 潜海 = [

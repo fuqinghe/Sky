@@ -21,7 +21,7 @@ export class 今日任务 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async task(e: Messagetype) {
+  async task(e: Messagetype): Promise<boolean>  {
     // 图片链接
     const url = 'https://api.t1qq.com/api/sky/gy/sc/json/mrrw.jpg';
     // 保存路径

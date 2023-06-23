@@ -18,7 +18,7 @@ export class 破晓季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Dawn(e: Messagetype) {
+  async season_Dawn(e: Messagetype): Promise<boolean>  {
     const centent = '破晓季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/14破晓季.png'
     const 破晓 = [

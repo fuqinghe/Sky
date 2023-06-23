@@ -18,7 +18,7 @@ export class 圣岛季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Holy_island(e: Messagetype) {
+  async season_Holy_island(e: Messagetype): Promise<boolean>  {
     const centent = '圣岛季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/06圣岛季.png'
     const 圣岛 = [

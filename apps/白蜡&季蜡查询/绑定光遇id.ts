@@ -25,7 +25,7 @@ export class 绑定光遇id extends plugin {
             ]
         });
     }
-    async sky_bdid(e: Messagetype){
+    async sky_bdid(e: Messagetype) {
         var Sky_ID = e.msg.content.replace(/#|(<@![0-9a-zA-Z]+>| |绑定光遇id)/g, "")
         var data = {
             "Sky_id": Sky_ID

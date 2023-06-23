@@ -17,7 +17,7 @@ export class 复刻兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Copy_the_exchange_chart(e: Messagetype) {
+  async Copy_the_exchange_chart(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/复刻图/image/Reprint.png';
     if (!fs.existsSync(imgreply)) {
         await e.reply("抱歉未找到复刻图文件夹！\n请使用指令 [ /更新复刻 ] 安装");

@@ -17,7 +17,7 @@ export class 感恩季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Be_grateful(e: Messagetype) {
+  async season_Be_grateful(e: Messagetype): Promise<boolean>  {
     const centent = '感恩季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/01感恩季.png'
     const 感恩 = [

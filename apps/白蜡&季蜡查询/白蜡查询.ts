@@ -15,7 +15,7 @@ export class 白蜡查询 extends plugin {
             ]
         });
     }
-    async 白蜡(e: Messagetype){
+    async 白蜡(e: Messagetype) {
         var json = JSON.parse(fs.readFileSync(dirpath + "/" + filename, "utf8"));
         var id = e.msg.author.id
         let place = e.msg.content.replace(/#|(<@![0-9a-zA-Z]+>| |白蜡查询)/g, "")

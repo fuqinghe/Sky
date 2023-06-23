@@ -18,7 +18,7 @@ export class 追忆季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Recall(e: Messagetype) {
+  async season_Recall(e: Messagetype): Promise<boolean>  {
     const centent = '追忆季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Sky/raw/master/resource/picture.jpg'
     const 追忆 = [

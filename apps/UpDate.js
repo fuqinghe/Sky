@@ -1,8 +1,6 @@
 import { exec } from 'child_process'
 import { plugin } from 'alemon'
-import { AppName } from '../app.config'
 import fs from 'fs'
-const { exec } = require('child_process');
 const _path = process.cwd()
 
 export class Update extends plugin {
@@ -26,7 +24,7 @@ export class Update extends plugin {
 	}
 
 	async update (e) {
-		const resPath = `${_path}/plugins/${AppName}`;
+		const resPath = `${_path}/plugins/Sky`;
         let command = '';
         if (fs.existsSync(`${resPath}`)) {
             e.reply('开始尝试更新，请耐心等待~');
@@ -49,7 +47,7 @@ export class Update extends plugin {
         }
     }
     async update_reprint (e) {
-        const resPath = `${_path}/plugins/${AppName}/resource/`;
+        const resPath = `${_path}/plugins/Sky/resource/`;
         let command = '';
         if (fs.existsSync(`${resPath}/复刻图/`)) {
             e.reply('开始尝试更新，请耐心等待~');
@@ -84,7 +82,7 @@ export class Update extends plugin {
         }
     }
     async update_gallery (e) {
-        const resPath = `${_path}/plugins/${AppName}/resource/`;
+        const resPath = `${_path}/plugins/Sky/resource/`;
         let command = '';
         if (fs.existsSync(`${resPath}/光遇绘画分享/`)) {
             // 图片包已经安装，尝试更新

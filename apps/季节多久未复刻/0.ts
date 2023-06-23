@@ -17,7 +17,7 @@ export class XX季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_XX(e: Messagetype) {
+  async season_XX(e: Messagetype): Promise<boolean>  {
     const XX = [
         { name: '1', date: new Date('2023-01-01') },
         { name: '2', date: new Date('2023-01-01') },

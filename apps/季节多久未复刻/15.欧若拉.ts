@@ -18,7 +18,7 @@ export class 欧若拉季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_Aurora(e: Messagetype) {
+  async season_Aurora(e: Messagetype): Promise<boolean>  {
     const centent = '欧若拉季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Sky/raw/master/resource/picture.jpg'
     const 欧若拉 = [

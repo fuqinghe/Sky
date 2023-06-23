@@ -18,7 +18,7 @@ export class 集结季多久未复刻 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async season_assembly(e: Messagetype) {
+  async season_assembly(e: Messagetype): Promise<boolean>  {
     const centent = '集结季多久未复刻'
     const picture = 'https://gitee.com/Tloml-Starry/Tlon-picture/raw/master/season/09集结季.png'
     const 集结 = [

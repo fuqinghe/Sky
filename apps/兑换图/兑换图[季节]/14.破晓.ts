@@ -17,7 +17,7 @@ export class 破晓兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_Dawn(e: Messagetype) {
+  async Exchange_chart_Dawn(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/季节/破晓.png';
       e.sendImage(imgreply)
       return false;
