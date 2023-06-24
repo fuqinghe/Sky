@@ -17,7 +17,7 @@ export class 周年庆兑换图 extends plugin {
    * @param e 消息对象
    * @returns
    */
-  async Exchange_chart_Collective_copy(e: Messagetype): Promise<boolean> {
+  async Exchange_chart_Anniversary_celebration(e: Messagetype): Promise<boolean> {
     const imgreply = 'plugins/Sky/resource/兑换图/活动/周年庆.png';
       e.sendImage(imgreply)
       return false;
