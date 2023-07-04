@@ -1,7 +1,6 @@
 import { plugin, Messagetype, segment } from 'alemon'
 import fs from 'fs'
 
-fs.mkdirSync('plugins/Sky/data/Sky签到', { recursive: true });
 export class signIn extends plugin {
   constructor() {
     super({

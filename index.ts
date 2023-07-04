@@ -1,32 +1,32 @@
 import { createApps, setMessage, BotType, BotConfigType } from 'alemon'
-/* 非依赖引用 */
 import { AppName } from './app.config.js'
 import { PointMessageType } from './types.js'
+import fs from 'fs'
+const dirpath_0 = "plugins/Sky/data/id"
+const dirpath_1 = "plugins/SKy/data/Sky签到"
+let filename_0 = `身高ID.json`
+let filename_1 = `Sky ID.json`
+if (!fs.existsSync(dirpath_0)) {fs.mkdirSync(dirpath_0);}
+if (!fs.existsSync(dirpath_1)) {fs.mkdirSync(dirpath_1);}
+if (!fs.existsSync(dirpath_0 + "/" + filename_0)) {fs.writeFileSync(dirpath_0 + "/" + filename_0, JSON.stringify({}))}
+if (!fs.existsSync(dirpath_0 + "/" + filename_1)) {fs.writeFileSync(dirpath_0 + "/" + filename_1, JSON.stringify({}))}
 
 declare global {
-  //机器人信息
   var robot: BotType
-  //机器人配置
   var cfg: BotConfigType
 }
-/* 重定义e消息方法(非必须) */
+
+console.log('         Sky插件载入成功！')
+console.log('         感谢您的使用！')
+console.log('         官方频道：https://pd.qq.com/s/bclm3owlx')
+
 setMessage(AppName, (e: PointMessageType) => {
-  /* 当存在时 */
   if (e.msg.user) {
-    /* 定义e.user为e.msg.user */
     e.user = e.msg.user
   }
-  /* 用于确保开发时插件执行的e消息字段的正确性 */
   if (cfg.sandbox) console.info(e)
   return e
 })
 
-/** 创建插件应用 */
 await createApps(AppName)
 
-/**
- * 倘若你有很多同级插件作为你的子插件
- * 你甚至可以手动管理并决定是否创建该插件
- * 注:作为子插件不应该再执行创建插件行为
- */
-// createApps('xiuxian-plugin')

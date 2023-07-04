@@ -3,14 +3,6 @@ import fs from 'fs'
 
 const dirpath = "plugins/Sky/data/id"
 var filename = `Sky ID.json`
-
-if (!fs.existsSync(dirpath)) {//如果文件夹不存在
-    fs.mkdirSync(dirpath);//创建文件夹
-  }
-  if (!fs.existsSync(dirpath + "/" + filename)) {//文件不存在
-    fs.writeFileSync(dirpath + "/" + filename, JSON.stringify({//创建文件
-    }))
-  }
 export class 绑定光遇id extends plugin {
     constructor() {
         super({
